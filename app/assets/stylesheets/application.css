@@ -36,7 +36,6 @@ table{
   display: table;
   border-collapse: separate;
   box-sizing: border-box;
-  text-indent: initial;
   border-spacing: 2px;
   border-color: grey;
 }
@@ -50,13 +49,10 @@ thead {
 tr {
   display: table-row;
   border-color: inherit;
-  vertical-align: inherit;
 }
 
 
 th{
   display: table-cell;
-  vertical-align: inherit;
   font-weight: bold;
-  text-align: -internal-center;
 }
