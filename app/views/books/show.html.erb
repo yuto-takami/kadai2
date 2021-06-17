@@ -4,15 +4,17 @@
   </head>
 
   <body>
-    <p>Book was successfully created.</p>
+    <% if flash[:notice] %>
+      <p><%= flash[:notice] %></p>
+    <% end %>
+    </div>
     <h2>Title:</h2>
     <p><%= @book.title %></p>
     <h2>Body:</h2>
     <p><%= @book.body %></p>
-    
-    <a>Edit</a>
+
+    <%= link_to "Edit", edit_book_path(@book.id) %>
     |
     <a href = "/books" >Back</a>
   </body>
-
 </html>
